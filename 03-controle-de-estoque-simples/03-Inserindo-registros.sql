@@ -19,3 +19,5 @@ VALUES
     (2,200,'2023-11-13'),
     (3,70,'2023-11-14');
 
+INSERT INTO entradas(produto_id, quantidade, data_entrada) VALUES (2,4000,'2023-11-15');
+
