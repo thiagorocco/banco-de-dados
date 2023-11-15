@@ -1,0 +1,6 @@
+1. CREATE DATABASE dbname;
+2. USE dbname;
+3. CREATE TABLE table_name( name_field TYPE, name_field2 TYPE) EX: id PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50)) 
+4. 
+
+ALTER TABLE `produtos` DROP `valor_unitario`;

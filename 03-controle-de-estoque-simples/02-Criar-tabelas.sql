@@ -1,7 +1,6 @@
 CREATE TABLE produtos (
     produto_id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(255),
-    valor_unitario DECIMAL(10,2)
+    nome VARCHAR(255)
 );
 
 CREATE TABLE entradas(

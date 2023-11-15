@@ -1,9 +1,9 @@
 INSERT INTO produtos 
     (nome, valor_unitario) 
 VALUES
-    ('Relógio',24.99),
-    ('Grampeador',11.49),
-    ('Mouse',8.99);
+    ('Relógio'),
+    ('Grampeador'),
+    ('Mouse');
 
 INSERT INTO entradas
     (produto_id, quantidade, data_entrada)
