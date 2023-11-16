@@ -1,6 +1,101 @@
-1. CREATE DATABASE dbname;
-2. USE dbname;
-3. CREATE TABLE table_name( name_field TYPE, name_field2 TYPE) EX: id PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50)) 
-4. 
+Estes são comandos SQL fundamentais e cobrem uma ampla gama de operações com bancos de dados relacionais.
 
-ALTER TABLE `produtos` DROP `valor_unitario`;
+0 COMENTÁRIOS. 
+    Exemplo: /* Isso é um comentário em sql e não será executado */
+
+1. CREATE DATABASE
+    Criar uma banco de dados: 
+    Exemplo: CREATE DATABASE dbname;
+
+2. USE
+    Usar/Selecionar um banco de dados para manipulá-lo pela linha de comando.
+    Exemplo: USE dbname;
+
+3. CREATE TABLE
+    Criar tabelas no banco de dados.
+    Exemplo: CREATE TABLE produto(id PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), preco DECIMAL(10,2)) 
+
+4. ALTER TABLE
+    Alterar a tabela ou os campos de uma tabela.
+    Exemplo: ALTER TABLE `produtos` DROP `valor_unitario`;
+
+
+5. SELECT:
+    Descrição: Recupera dados de uma ou mais tabelas.
+    Exemplo: SELECT nome, idade FROM clientes;
+
+6. FROM:
+    Descrição: Especifica a tabela da qual você deseja selecionar os dados.
+    Exemplo: SELECT nome, salario FROM funcionarios WHERE salario > 50000;
+
+7. WHERE:
+    Descrição: Filtra registros com base em uma condição.
+    Exemplo: SELECT * FROM pedidos WHERE status = 'Entregue';
+
+8. INSERT INTO:
+    Descrição: Insere novos registros em uma tabela.
+    Exemplo: INSERT INTO produtos (nome, preco) VALUES ('Notebook', 1200.00);
+
+9. UPDATE:
+    Descrição: Atualiza dados existentes em uma tabela.
+    Exemplo: UPDATE clientes SET cidade = 'São Paulo' WHERE cidade = 'SP';
+
+10. DELETE:
+    Descrição: Remove registros de uma tabela.
+    Exemplo: DELETE FROM alunos WHERE nota < 5.0;
+
+11. ORDER BY:
+    Descrição: Ordena os resultados da consulta.
+    Exemplo: SELECT nome, idade FROM clientes ORDER BY idade DESC;
+
+12. GROUP BY:
+    Descrição: Agrupa registros com base em uma ou mais colunas.
+    Exemplo: SELECT cidade, COUNT(*) FROM clientes GROUP BY cidade;
+
+13. HAVING:
+    Descrição: Filtra o resultado de GROUP BY com base em uma condição.
+    Exemplo: SELECT cidade, COUNT(*) FROM clientes GROUP BY cidade HAVING COUNT(*) > 1;
+
+14. JOIN:
+    Descrição: Combina linhas de duas ou mais tabelas com base em uma condição relacionada.
+    Exemplo: SELECT pedidos.id, clientes.nome FROM pedidos JOIN clientes ON pedidos.cliente_id = clientes.id;
+
+15. INNER JOIN:
+    Descrição: Retorna apenas as linhas que têm correspondências em ambas as tabelas.
+    Exemplo: SELECT * FROM produtos INNER JOIN categorias ON produtos.categoria_id = categorias.id;
+
+16. LEFT JOIN:
+    Descrição: Retorna todas as linhas da tabela à esquerda e as correspondências da tabela à direita.
+    Exemplo: SELECT * FROM clientes LEFT JOIN pedidos ON clientes.id = pedidos.cliente_id;
+
+17. COUNT:
+    Descrição: Retorna o número de linhas em um conjunto de resultados.
+    Exemplo: SELECT COUNT(*) FROM produtos;
+
+18. SUM:
+    Descrição: Retorna a soma dos valores em uma coluna.
+    Exemplo: SELECT SUM(valor) FROM vendas;
+
+19. AVG:
+    Descrição: Retorna a média dos valores em uma coluna.
+    Exemplo: SELECT AVG(idade) FROM alunos;
+
+20. MAX:
+    Descrição: Retorna o valor máximo em uma coluna.
+    Exemplo: SELECT MAX(salario) FROM funcionarios;
+
+21. MIN:
+    Descrição: Retorna o valor mínimo em uma coluna.
+    Exemplo: SELECT MIN(preco) FROM produtos;
+
+22. LIKE:
+    Descrição: Filtra resultados com base em padrões de texto.
+    Exemplo: SELECT * FROM clientes WHERE nome LIKE 'Jo%';
+
+23. DISTINCT:
+    Descrição: Retorna valores distintos em uma coluna.
+    Exemplo: SELECT DISTINCT categoria FROM produtos;
+
+24. LIMIT:
+    Descrição: Restringe o número de linhas retornadas em um conjunto de resultados.
+    Exemplo: SELECT * FROM alunos LIMIT 10;
