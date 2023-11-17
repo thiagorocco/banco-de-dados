@@ -1,0 +1,30 @@
+DDL (Data *Definition* Language):
+    Usada para definir a estrutura e esquema do banco de dados.
+
+    Principais Comandos:
+        CREATE: Cria objetos no banco de dados, como tabelas, índices e visões.
+        ALTER: Modifica a estrutura de objetos existentes no banco de dados.
+        DROP: Remove objetos do banco de dados, como tabelas, índices e visões.
+
+DML (Data *Manipulation* Language):
+    Usada para manipular os dados dentro das tabelas.
+
+    Principais Comandos:
+        SELECT: Recupera dados de uma ou mais tabelas.
+        INSERT: Adiciona novos registros a uma tabela.
+        UPDATE: Modifica os dados existentes em uma tabela.
+        DELETE: Remove registros de uma tabela.
+
+DQL (Data *Query* Language):
+    É uma subcategoria da DML e é usada especificamente para consultar dados.
+
+    Principais Comandos:
+    SELECT: Utilizado para recuperar dados de uma ou mais tabelas.
+
+DCL (Data *Control* Language):
+    Usada para controlar o acesso aos dados dentro do banco de dados.
+
+    Principais Comandos:
+    GRANT: Concede privilégios de acesso a usuários ou papéis.
+    REVOKE: Remove privilégios de acesso previamente concedidos.
+    Resumidamente, a DDL lida com a estrutura do banco de dados, a DML lida com a manipulação dos dados, a DQL lida com consultas e a DCL lida com o controle de acesso e permissões. Cada uma dessas linguagens desempenha um papel crucial na administração e utilização efetiva de um banco de dados SQL.
